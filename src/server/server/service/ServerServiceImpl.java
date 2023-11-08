@@ -119,7 +119,6 @@ public class ServerServiceImpl implements iServerService {
      *
      * @return историю сообщений в строковом представлении.
      */
-    @Override
     public String getHistory() {
         return serverRepository.readLog();
     }

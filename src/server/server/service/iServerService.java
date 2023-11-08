@@ -52,10 +52,4 @@ public interface iServerService {
      */
     boolean isServerWork();
 
-    /**
-     * Получение истории сообщений.
-     *
-     * @return история сообщений в строковом представлении.
-     */
-    String getHistory();
 }

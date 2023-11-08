@@ -1,5 +1,6 @@
 package server.client;
 
+import server.server.service.ServerServiceImpl;
 import server.server.service.iServerService;
 
 public class Client {
@@ -23,7 +24,7 @@ public class Client {
         if (server.connectUser(this)){
             printText("Вы успешно подключились!\n");
             connected = true;
-            String log = server.getHistory();
+            String log = ((ServerServiceImpl) server).getHistory();
             if (log != null){
                 printText(log);
             }
